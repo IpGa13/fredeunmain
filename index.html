@@ -1,1 +1,86 @@
-no fuck you
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Fredeun Homepage</title>
+	</head>
+
+
+	<body>
+	
+		<div class="main">
+			<div class="header">
+				<h1>Fredeun</h1>
+				<h2 id="ransub">Random Subtitle</h2>
+				
+				<nav>
+					<a href="/mods" class="anchorbutton">Mods</a>
+					<a href="/games" class="anchorbutton">Games</a>
+					<a href="/music" class="anchorbutton">Music</a>
+				</nav>
+			</div>
+
+			<div class="content">
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum quisquam ratione, nam eligendi expedita praesentium incidunt doloribus eius iste exercitationem, repudiandae laudantium eum repellendus dolorem at quaerat iusto quidem.</p>
+			</div>
+		</div>
+	
+	</body>
+	
+	<style>
+		body {
+			font-family:sans-serif,wingdings,cursive;
+			background-color:#252525;
+			color:white;
+		}
+
+		.header {
+			background-color: #343434;
+			border-radius: 15px 15px 5px 5px;
+			padding:5px;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.content {
+			margin-top:5px;
+			background-color: #343434;
+			border-radius:5px;
+			padding:2px;
+		}
+		
+		
+		.anchorbutton {
+			border: 1px solid #777777;
+			background-color:#353535;
+			padding:3px;
+			color:white;
+			text-decoration:none;
+		}
+		
+		.anchorbutton:hover {
+			border: 1px solid white;
+			background-color: #454545;
+		}
+	</style>
+
+	<script>
+
+		const subtitles = [
+			"This was once a Minecraft server",
+			"I do programming occasonally",
+			"Proud #Antiveganism Member",
+			"Satire may never be limited",
+			"Go away please",
+			"I hate microsoft",
+			"Sprich Deutsch du Hurensohn!"
+		]
+
+		let rand = Math.floor(Math.random() * subtitles.length);
+
+		document.getElementById("ransub").innerHTML = subtitles[rand];
+
+	</script>
+
+</html>

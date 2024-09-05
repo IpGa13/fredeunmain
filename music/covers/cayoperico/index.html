@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fredeun Music</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <div class="main">
+        </div><div class="header">
+            <h1>Fredeun</h1>
+            <h2 id="ransub">Gettin' Money sha</h2>		
+        </div>
+
+        <div class="content">
+            <h3>Low Intensity</h3>
+            <audio controls>
+                <source src="cayopericolow.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br>
+            <h3>High Intensity</h3>
+            <audio controls>
+                <source src="cayopericohigh.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <script>
+
+		const subtitles = [
+			"Just because you are leaving de crime scene of the century does not mean there is not time for opportunistic theft, yes?",
+            "We leave behind a single piece of de puzzle, Mr. Rubio will finish it!",
+            "Gettin' Money!",
+            "Our's is a strange buisness, kapitan."
+		]
+
+		let rand = Math.floor(Math.random() * subtitles.length);
+
+		document.getElementById("ransub").innerHTML = subtitles[rand];
+
+	</script>
+</body>
+</html>

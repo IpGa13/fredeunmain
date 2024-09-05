@@ -1,0 +1,49 @@
+body {
+    font-family:sans-serif;
+    background-color:#252525;
+    color:white;
+}
+
+a {
+    color:rgb(150, 150, 255);
+}
+
+li {
+    margin:15px;
+}
+
+li a {
+    padding: 5px;
+    font-size: large;
+    background-color: #252525;
+    border-radius:5px;
+}
+
+.header {
+    background-color: #343434;
+    border-radius: 15px 15px 5px 5px;
+    padding:5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content {
+    margin-top:5px;
+    background-color: #343434;
+    border-radius:5px;
+    padding:2px;
+}
+
+
+.anchorbutton {
+    border: 1px solid #777777;
+    background-color:#353535;
+    padding:3px;
+    color:white;
+    text-decoration:none;
+}
+
+.anchorbutton:hover {
+    border: 1px solid white;
+    background-color: #454545;
+}
